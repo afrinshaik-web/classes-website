@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project</title>
+        <script src="https://kit.fontawesome.com/073f66530f.js" crossorigin="anonymous"></script>
+        <style>
+            .Header{
+                display: flex;
+                background-color: rgb(212, 148, 8);
+            } 
+            .bar{
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                background-color: black;
+                color: white;
+                margin-top: 5px;
+                width: 100%;
+            }
+            h4:hover {
+                color: red;
+            }
+            .icons{
+                
+                padding-top: 27px;
+                padding-left: 400px;
+                
+            }
+            .icons i{
+                padding-left: 20px;
+            }
+             .hi{
+                padding-top: 50px;
+                padding-right: 50px;
+            }
+            .navigation{
+                display: grid;
+                grid-template-columns: auto auto;
+                font-family: 'Times New Roman', Times, serif;
+                padding-left: 50px;
+                background-color: cadetblue;
+              
+            }
+            .option{
+                padding-top: 27px;
+                color: black;
+                
+            }
+            .option a:hover{
+                 background-color: white;
+                 color: red;
+                 padding: 20px;
+                 margin-top: 50px;
+            }
+            .option :active{
+                background-color: indianred;
+                color: red;
+            }
+            .option a{
+                padding-right: 40px;
+                margin-left: 0px;
+                text-decoration: none;
+                color: black;
+            }
+            article{
+                display: none;
+            }
+            aside:hover article{
+                display: block;
+            }
+            .mainbar{
+                  padding-left: 150px;
+                  color: white;
+                  
+            }
+            button{
+                background-color: rgb(4, 184, 109);
+                color: white;
+                border: 1px solid rgb(4, 184, 109);
+            }
+            .image{
+                background-image: url("https://i.pinimg.com/1200x/d1/b0/83/d1b083ac9d9344250908137e08d6eb20.jpg");
+                background-size: cover;
+                height: 500px;
+                width: 100%;
+                animation: hello 15s infinite;
+            }
+            @keyframes hello{
+                20%{
+                    background-image: url("https://thumbs.dreamstime.com/b/business-team-meeting-modern-office-stunning-cityscape-background-sunset-professionals-silhouetted-discussing-377360085.jpg");
+                }
+                40%{
+                    background-image: url("https://www.shutterstock.com/shutterstock/videos/1102169215/thumb/1.jpg?ip=x480");
+                }
+                60%{
+                    background-image: url("https://www.topuniversities.com/sites/default/files/styles/articles_inline/public/articles/lead-images/pexels-yankrukov-8199555.jpg.webp");
+                }
+                80%{
+                    background-image: url("https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?semt=ais_hybrid&w=740");
+                }
+                100%{
+                    background-image: url("https://thumbs.dreamstime.com/b/group-5-happy-young-business-people-21756831.jpg?w=768");
+                }
+            }
+            .rj{
+                color: green;
+            }
+            article{
+                display: none;
+            }
+            aside:hover article{
+                display: block;
+            }
+            .enquairy{
+                background-color: white;
+                padding-left: 80px;
+                padding-right: 80px;
+                
+                text-align: center; 
+                width: 300px;
+                height: 350px;
+                
+            }
+            .apply{
+               
+                background-color: white;
+                padding-left: 80px;
+                padding-right: 80px;
+                margin-right: 30px;
+                text-align: center; 
+                width: 250px;
+                height: 250px;
+                
+            }
+            input{
+                text-align: center;
+                border-bottom: 2px solid brown;
+                border-top: 1px solid rgb(231, 210, 210);
+                border-left: 1px solid rgb(231, 210, 210);
+                border-right: 1px solid rgb(231, 210, 210);
+            }
+            textarea{
+                border-bottom: 2px solid brown;
+                border-top: 1px solid rgb(231, 210, 210);
+                border-left: 1px solid rgb(231, 210, 210);
+                border-right: 1px solid rgb(231, 210, 210);
+            }
+            .Classroom{
+                display: grid;
+                grid-template-columns: auto auto;
+                background-color: deepskyblue;
+                padding: 0px;
+                margin-bottom: 10px;
+            }
+           .features{
+            display: flex;
+           }
+           .item1{
+                background-color: mediumseagreen;
+                color: white;
+                text-align: center;
+                margin-right: 10px;
+                border-radius: 10px;
+           }
+           .item2{
+                background-color: mediumseagreen;
+                color: white;
+                text-align: center;
+                margin-right: 10px;
+                border-radius: 10px;
+           }
+           .item3{
+                background-color: mediumseagreen;
+                color: white;
+                text-align: center;
+                margin-right: 10px;
+                border-radius: 10px;
+           }
+           .item4{
+                background-color: mediumseagreen;
+                color: white;
+                text-align: center;
+                margin-right: 10px;
+                border-radius: 10px;
+           }
+           .item h2{
+            text-align: center;
+           }
+           .para{
+            text-align: center;
+           }
+           .para2 h2{
+            text-align: center;
+           }
+           .para3{
+            text-align: center;
+           }
+           .courses{
+            display: flex;
+           }
+           .courses1{
+                background-color: white;
+                color: black;
+                text-align: center;
+                margin-right: 10px;
+                border: gainsboro;
+                box-shadow: 5px 5px 10px grey;
+                height: 200px;
+               
+           }
+           .back{
+            background-color: mediumseagreen;
+            padding: 10px;
+            color: white;
+            margin-top: 0px;
+           }
+           .courses2{
+                background-color: white;
+                color: black;
+                text-align: center;
+                margin-right: 10px;
+                border: gainsboro;
+                box-shadow: 5px 5px 10px grey;
+                height: 200px;
+               
+           }
+           .courses3{
+                background-color: white;
+                color: black;
+                text-align: center;
+                margin-right: 10px;
+                 border: gainsboro;
+                box-shadow: 5px 5px 10px grey;
+                height: 200px;
+                margin-bottom: 15px;
+                
+           }
+           .front{
+            background-color: mediumseagreen;
+            padding: 10px;
+            color: white;
+            margin-top: 0px;
+           }
+           footer{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+           }
+          .foot1{
+                margin-right: 10px;
+                padding-right: 100px;
+           }
+           .foot2{
+            padding-right: 100px;
+           }
+           .foot4 i{
+            background-color: mediumspringgreen;
+            padding-left: 30px;
+        }
+        .child{
+            display: none;
+        }
+        .parent:hover .child{
+            display: block;
+            position: absolute;
+            left: 45%;
+        }
+        </style>
+
+
+    </head>
+
+    <main class="Header">
+        <marquee behavior="alternate" direction="right">
+    <header>
+         Our best offer Ever!!Summer Special-Get 3 Courses at 22499/-only<a href="">Read More</a>
+    </header>
+    
+    </marquee>
+    </main>
+
+    <body>
+        <main>
+        <div class="bar">
+            
+            <h4>Email:rjtechnology@gmail.com</h4> 
+            <h4>Contact:+91 9025741101</h4>
+            
+        <div class="icons">
+            <a href="https://www.facebook.com/">
+            <i class="fa-brands fa-facebook" style="color: white;"></i>
+            </a>
+            <a href="">
+            <i class="fa-brands fa-square-twitter" style="color: white;"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+            <i class="fa-brands fa-instagram" style="color: white;"></i>
+            </a>
+            <a href="https://in.linkedin.com/">
+            <i class="fa-brands fa-linkedin" style="color: white;"></i>
+            </a>
+        </div> 
+        </div></main>
+        <main class="image">
+        <nav class="navigation">
+            <div class="rj">
+                <h2><i class="fa-solid fa-graduation-cap"></i>RJ Technology</h2>
+            </div>
+            <div class="option">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <span class="parent">
+                    <a href="">Courses</a>
+                <span class="child">
+                    <p><a href="front.html">Front End </a></p>
+
+                     <a>Back End</a>
+                </span>
+                 </span>
+
+                <a href="">Online Training</a>
+                <a href="">Contact</a>
+                </nav>
+                <aside>
+                <button>Enquiry</button>
+                <article>
+            <form class="enquairy">
+                <h4>Request for <br>
+                    Class Room & Online Training Quotation</h4>
+                    <div class="Classroom">
+                    <h4><i class="fa-solid fa-house"></i>Classroom</h4>
+                    <h4><i class="fa-solid fa-laptop"></i>Online</h4>
+                    </div>
+                    <input type="text" placeholder="Enter Your Name"><br><br>
+                    <input type="emailid" placeholder="Enter Your Email"><br><br>
+                    <input type="number" placeholder="Enter Your Mobile No"><br><br>
+                    <select>
+                        <option>Select Courses</option>
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        <option>Javascript</option>
+                        <option>React Js</option>
+                    </select><br><br>
+                    <button>Submit Only</button>
+            </form>
+            </article>
+            </aside>
+            
+            </div>
+        
+        <div class="mainbar">
+            <h2>Rj Technologies</h2>
+            <p>Best Online & Classroom Training Institute</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nesciunt quibusdam, <br>
+                magnam corporis quam iusto, tempora inventore fugit similique repellendus quas aspernatur <br>
+                numquam odio at perspiciatis mollitia dolores soluta! Dicta obcaecati aperiam consequatur <br>
+                dolorem aliquam earum asperiores ducimus quas est tenetur quam saepe, neque blanditiis <br>
+                et adipisci omnis voluptate optio.</p>
+             <aside>  
+            <button>Apply Online</button>
+            <article>
+            <form class="apply">
+            <h5>Online Enquiry</h5>
+            <input type="text" placeholder="Name"><br><br>
+            <input type="number" placeholder="10 Digit Mobile No"><br><br>
+            <input type="emailid" placeholder="Email"><br><br>
+            <textarea></textarea><br><br>
+            <button>I'm intrested Tell me More</button>
+            </form>
+            </article>
+            </aside> 
+        </div>
+        </main>
+        <main class="item">
+        <h2>Key Features</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim cupiditate, at quisquam quidem suscipit accusantium odit modi esse quis, molestias mollitia ea  </p>
+            <p class="para">temporibus delectus ab beatae quaerat ipsum consequatur! Neque?</p>
+        </main>
+        <section class="features">
+            
+        <div class="item1">
+            <i class="fa-solid fa-file-word"></i>
+            <h4>Expert Faculty</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda sint accusantium voluptate nesciunt animi, odit amet. Impedit temporibus nisi illum.</p>
+        </div>
+        
+        <div class="item2">
+            <i class="fa-regular fa-clock"></i>
+            <h4>Well Equiped Labs</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vel facilis aspernatur beatae itaque qui in ut possimus repudiandae laudantium!</p>
+        </div>
+
+         <div class="item3">
+            <i class="fa-solid fa-building-columns"></i>
+            <h4>Quality Education</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, iusto cumque. Modi totam rem quae laborum, quis minus commodi quas.</p>
+        </div>
+        <div class="item4">
+            <i class="fa-solid fa-square-phone"></i>
+            <h4>24*7 Access</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium animi non laborum fugit delectus molestias saepe ea aliquam deleniti accusantium.</p>
+        </div>
+        </section>
+        <main class="para2">
+        <h2>Our Courses</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nulla qui eveniet praesentium quos. Explicabo voluptatem aperiam sunt consectetur non iusto</p>
+        <p class="para3"> fugit at tempore Lorem ipsum dolor sit Lorem, ipsum dolor.</p>
+        </main>
+        <section class="courses">
+        <div class="courses1">
+            <h4 class="back">Full Stack Development</h4>
+            <h4>Cras ultricies lacus consectetur,consectetur</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, repudiandae!</p>
+            <a href="apply.html">ApplyOnline</a>
+        </div>
+        <div class="courses2">
+            <h4 class="back">Front End Development</h4>
+            <h4>Cras ultricies lacus consectetur,consectetur</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, quos.</p>
+            <a href="apply.html">ApplyOnline</a>
+        </div>
+        <div class="courses3">
+            <h4 class="back">Backend Development</h4>
+            <h4>Cras ultricies lacus consectetur,consectetur</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, delectus.</p>
+            <a href="apply.html">ApplyOnline</a>
+            </section>
+            <section class="courses">
+        <div class="courses1">
+            <h4 class="front">Data Science</h4>
+            <h4>Cras ultricies lacus consectetur,consectetur</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, repudiandae!</p>
+            <a href="apply.html">ApplyOnline</a>
+        </div>
+        <div class="courses2">
+            <h4 class="front">AWS</h4>
+            <h4>Cras ultricies lacus consectetur,consectetur</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, quos.</p>
+            <a href="apply.html">ApplyOnline</a>
+        </div>
+        <div class="courses3">
+            <h4 class="front">Devops</h4>
+            <h4>Cras ultricies lacus consectetur,consectetur</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, delectus.</p>
+            <a href="apply.html">ApplyOnline</a>
+            </section>
+
+            <footer>
+                <div class="foot1">
+                <h2><i class="fa-solid fa-graduation-cap"></i>Rj Technology</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere aliquam saepe est sapiente possimus nulla, neque quia. Molestiae laudantium unde maxime ullam, sunt nihil natus ducimus laboriosam obcaecati aut perferendis labore deleniti! Praesentium sint culpa nisi magni sequi repellat expedita est rerum sunt vitae accusantium tempora, neque dolorem temporibus illo.</p>
+                </div>
+                <div class="foot2">
+                <h2>Our Services</h2>
+                <p>Mobile Application Development</p>
+                <p>Web Application Development</p>
+                <p>Website Design</p>
+                <p>Web User Interface Design</p>
+                <p>Web UX Design and Research</p>
+                <p>Theame Development Design</p>
+                </div>
+                <div class="foot3">
+                <h2>Head Office</h2>
+                <address>1/2,Marathahalli, Benguluru<br>
+                         Karnataka-560037,<br>
+                         Phone:+91 9025741101 <br>
+                         Email:rjtechnology@gmail.com <br>
+                </address>
+                <p><b>Office Time:</b>10AM - 6AM</p>
+                </div>
+                <div class="foot4">
+                <h2>Subscribe Us</h2>
+                <input type="emailid" placeholder="Enter Email Address">
+                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+                <i class="fa-solid fa-paper-plane"></i>
+                </a><br>
+                <a href="https://www.facebook.com/">
+            <i class="fa-brands fa-facebook" style="color: black;"></i>
+                </a>
+            <a href="">
+            <i class="fa-brands fa-square-twitter" style="color: black;"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+            <i class="fa-brands fa-instagram" style="color: black;"></i>
+            </a>
+            <a href="https://in.linkedin.com/">
+            <i class="fa-brands fa-linkedin" style="color: black;"></i>
+            </a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
