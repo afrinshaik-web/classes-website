@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Frontend</title>
+        <script src="https://kit.fontawesome.com/073f66530f.js" crossorigin="anonymous"></script>
+        <style>
+            .Header{
+                display: flex;
+                background-color: rgb(212, 148, 8);
+            }
+            
+            .bar{
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                background-color: black;
+                color: white;
+                margin-top: 5px;
+                width: 100%;
+            }
+
+            h4:hover {
+                color: red;
+            }
+            
+            .icons{
+                padding-top: 27px;
+                padding-left: 400px; 
+            }
+
+             .hi{
+                padding-top: 50px;
+                padding-right: 50px;
+            }
+
+            .navigation{
+                display: grid;
+                grid-template-columns: auto auto;
+                font-family: 'Times New Roman', Times, serif;
+                padding-left: 50px;
+                background-color: cadetblue;
+            }
+
+            .rj{
+                color: green;
+            }
+
+            .option{
+                padding-top: 27px;
+                color: black;
+            }
+
+            .option a:hover{
+                 background-color: white;
+                 color: red;
+                 padding: 20px;
+                 margin-top: 50px;
+            }
+
+            .option :active{
+                background-color: indianred;
+                color: red;
+            }
+
+            .option a{
+                padding-right: 40px;
+                margin-left: 0px;
+                text-decoration: none;
+                color: black;
+            }
+           
+            .icons i{
+                padding-left: 20px;
+            }
+
+            article{
+                display: none;
+            }
+
+            aside:hover article{
+                display: block;
+            }
+
+            .enquairy{
+                background-color: white;
+                padding-left: 80px;
+                padding-right: 80px;
+                margin-right: 30px;
+                text-align: center; 
+                width: 300px;
+                height: 350px;
+            }
+
+            .Classroom{
+                display: grid;
+                grid-template-columns: auto auto;
+                background-color: deepskyblue;
+                padding: 0px;
+                margin-bottom: 10px;
+            }
+
+            .full{
+                text-align: center;
+                color: chocolate;
+            }
+
+            .end{
+                display:flex;
+                text-align: center;
+                padding-left: 370px;
+                color: white;
+            }
+
+            .ico{
+                background-color: chocolate;
+                padding: 8px;
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-top: 0px;
+            }
+
+            .on{
+                background-color: darkblue;
+                padding: 8px;
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-top: 0px;
+            }
+
+            .square p{
+                color: chocolate;
+                text-align: center;
+            }
+
+            ul{
+                padding-left: 100px;
+            }
+
+            .parent h4{
+                background-color: chocolate;
+                margin-left: 50px;
+                padding: 10px;
+            }
+
+            .parent ul{
+                overflow-y: scroll;
+                height: 60px;
+            }
+            
+            .parent p{
+                padding-left: 60px;
+            }
+             .child{
+            display: none;
+        }
+        .parent:hover .child{
+            display: block;
+        }
+           
+            
+        </style>
+    </head>
+     <main class="Header">
+        <marquee behavior="alternate" direction="right">
+    <header>
+         Our best offer Ever!!Summer Special-Get 3 Courses at 22499/-only<a href="">Read More</a>
+    </header>
+    
+    </marquee>
+    </main>
+    <body>
+      <main>
+        <div class="bar">
+            
+            <h4>Email:rjtechnology@gmail.com</h4>
+            <h4>Contact:+91 9025741101</h4>
+            
+        <div class="icons">
+            <a href="https://www.facebook.com/">
+            <i class="fa-brands fa-facebook" style="color: white;"></i>
+            </a>
+            <a href="">
+            <i class="fa-brands fa-square-twitter" style="color: white;"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+            <i class="fa-brands fa-instagram" style="color: white;"></i>
+            </a>
+            <a href="https://in.linkedin.com/">
+            <i class="fa-brands fa-linkedin" style="color: white;"></i>
+            </a>
+        </div> 
+        </div>
+    </main>
+        <main class="image">
+        <nav class="navigation">
+            <div class="rj">
+                <h2><i class="fa-solid fa-graduation-cap"></i>Rj Technology</h2>
+            </div>
+            <div class="option">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Courses</a>
+                <a href="">Online Training</a>
+                <a href="">Contact</a>
+                
+                </nav>
+                <aside>
+                <button>Enquiry</button>
+                <article>
+                    <form class="enquairy">
+                <h4>Request for <br>
+                    Class Room & Online Training Quotation</h4>
+                    <div class="Classroom">
+                    <h4><i class="fa-solid fa-house"></i>Classroom</h4>
+                    <h4><i class="fa-solid fa-laptop"></i>Online</h4>
+                    </div>
+                    <input type="text" placeholder="Enter Your Name"><br><br>
+                    <input type="emailid" placeholder="Enter Your Email"><br><br>
+                    <input type="number" placeholder="Enter Your Mobile No"><br><br>
+                    <select>
+                        <option>Select Courses</option>
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        <option>Javascript</option>
+                        <option>React Js</option>
+                    </select><br><br>
+                    <button>Submit Only</button>
+            </form>
+            </article>
+            </aside>
+            </main>
+            <div class="full">
+                <h2>Front End</h2>
+            </div>
+                <main class="end">
+                <h5 class="ico"><i class="fa-solid fa-user"></i>+Enroll</h5>
+                <h5 class="on">Javascript</h5>
+                <h5 class="on">React</h5>
+                <h5 class="ico"><i class="fa-solid fa-calendar"></i>View Batches</h5>
+            </main>
+            <section class="square">
+                <p><b>Who this course is for?</b></p>
+                <ul>
+                    <li>Manual tester, Non-programming aware testers intrested in learning Automation</li>
+                    <li>Any Software engineer who are intrested in Mobile Technologies</li>
+                    <li>Freshers/ Undergraduates/ Graduates/ Software Testers</li>
+                </ul>
+                <p><b>Why take this course?</b></p>
+                <ul>
+                    <li>Working professionals who wants to upgrade their skills frommanual testing.</li>
+                    <li>One who is willing to move into automation testing projects</li>
+                    <li>One who is working in automation and want to learn advance concept for implementing in their projects</li>
+                </ul>
+                <p><b>What you will learn?</b></p>
+                <ul>
+                    <li>Manual testers Non-programming aware testers intrsted in learningAutomation</li>
+                    <li>You will be able to handle real time challenges using Selenium</li>
+                    <li>Complete knowledge on Test NG, MAVEN, JENKINS</li>
+                    <li>You will improve your coding skills in writing best optimized code for Automating test cases</li>
+                    <li>In-depth understanding of real time Selenium CHALLENGES</li>
+                    <li>By the end of this course, You willbe Mastered on Selenium Web driver with strong Core JAVA basics</li>
+                    <li>******* You need NOT have java coding experince to start this course. Even non Non-programming candidates can follow this courses comfortable</li>
+                    <li>All Installation setup including Java knowledge is taken care as part of course</li>
+                    <li>100% JOB ASSISTANCE after completion of course to make your Profilr reach to Hundreds of Recruiters i our network.</li>
+                </ul>
+            </section>
+            <main>
+                <span class="parent">
+                <h4>HTML</h4>              
+                <span class="child">
+
+                <ul>
+                    <li>Manual testers, Non-programming aware testers interested in learning Automation</li>
+                    <li>You will be able to handle real time challenges using Selenium</li>
+                     <li>Complete knowlwdge on Test NG. MAVEN, JENKINS</li>
+                    <li>You will improve ypur coding skills in writing best optimized code for Automating test cases</li>
+                    <li>By the end of this course. You will be Mastered on Selenium Web driver with strong Core JAVA basics
+                    <li>****** You need NOT have java coding experience to start this course. Even non Programming candidates can follow this course comfortably</li>
+                    <li>All Installation setup including Java knowledge is taken care as part of course</li>
+                    <li>100% JOB ASSISTANCE after completion of course to make your Profile reach to Hundreds of Recruiters i our network ......</li>
+                </ul>
+                </span>
+                </span>
+                 <span class="parent">
+                <h4>CSS</h4>
+                <span class="child">
+                    <ul>
+                    <li>Manual testers, Non-programming aware testers interested in learning Automation</li>
+                    <li>You will be able to handle real time challenges using Selenium</li>
+                     <li>Complete knowlwdge on Test NG. MAVEN, JENKINS</li>
+                    <li>You will improve ypur coding skills in writing best optimized code for Automating test cases</li>
+                    <li>By the end of this course. You will be Mastered on Selenium Web driver with strong Core JAVA basics
+                    <li>****** You need NOT have java coding experience to start this course. Even non Programming candidates can follow this course comfortably</li>
+                    <li>All Installation setup including Java knowledge is taken care as part of course</li>
+                    <li>100% JOB ASSISTANCE after completion of course to make your Profile reach to Hundreds of Recruiters i our network ......</li>
+                </ul>
+                </span>
+                </span>
+              
+                                <span class="parent">
+                <h4>Javascript</h4>
+                <span class="child">
+                      <ul>
+                    <li>Manual testers, Non-programming aware testers interested in learning Automation</li>
+                    <li>You will be able to handle real time challenges using Selenium</li>
+                     <li>Complete knowlwdge on Test NG. MAVEN, JENKINS</li>
+                    <li>You will improve ypur coding skills in writing best optimized code for Automating test cases</li>
+                    <li>By the end of this course. You will be Mastered on Selenium Web driver with strong Core JAVA basics
+                    <li>****** You need NOT have java coding experience to start this course. Even non Programming candidates can follow this course comfortably</li>
+                    <li>All Installation setup including Java knowledge is taken care as part of course</li>
+                    <li>100% JOB ASSISTANCE after completion of course to make your Profile reach to Hundreds of Recruiters i our network ......</li>
+                    </ul>
+                     </span>
+                </span>
+                                <span class="parent">
+                <h4>React Js</h4>
+                <span class="child">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt numquam, excepturi temporibus asperiores enim quibusdam, laudantium sequi, distinctio veritatis modi esse est beatae consequuntur! Natus assumenda, a adipisci cumque nihil ipsa deserunt </p>
+                </span>
+            </span>
+            </main>
+    </body>
+</html>
